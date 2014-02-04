@@ -1,4 +1,13 @@
-chef-campfire-deployment
-========================
+# campfire-deployment cookbook #
 
-Campfire deployment HWRP
+# Requirements
+
+# Usage
+
+# Attributes
+
+# Recipes
+
+# Author
+
+Author:: P. Barrett Little (<barrett@barrettlittle.com>)
