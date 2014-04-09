@@ -22,14 +22,14 @@
 
 include_recipe 'campfire-deployment::default'
 
-campfire_deployment 'jrs' do
-  account 'jrs'
-  token '20d7b9ee5829f54b703439a1d89c03dfc4a70d50'
-  room 'The Cloud'
+campfire_deployment ENV['CAMPFIRE_ACCOUNT'] do
+  account ENV['CAMPFIRE_ACCOUNT']
+  token ENV['CAMPFIRE_TOKEN']
+  room ENV['CAMPFIRE_ROOM']
   release({
     deployer: 'TEST: Tiny Robot',
-    environment: 'develop',
-    revision: 'develop',
-    application: 'EireneRx'
+    environment: 'staging',
+    revision: 'master',
+    application: 'Robotic Robots'
   })
 end

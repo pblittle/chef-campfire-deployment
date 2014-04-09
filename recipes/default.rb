@@ -20,6 +20,8 @@
 # limitations under the License.
 #
 
-gem_package 'campy' do
-  version '0.1.3'
+r = chef_gem 'campy' do
+  action :nothing
 end
+
+r.run_action(:install)
